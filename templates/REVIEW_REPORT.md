@@ -7,6 +7,7 @@ Task: `<реальный внешний идентификатор, наприм
 Role: `<REVIEWER>`
 Title: `<slug-based-short-title>`
 SourceTicket: `<MAIL/<ROLE>/IN/...md | direct-owner-request>`
+ChangedFiles: `NONE`
 
 ## Сводка для владельца
 
@@ -16,40 +17,40 @@ SourceTicket: `<MAIL/<ROLE>/IN/...md | direct-owner-request>`
 - Дальше: `<следующий понятный шаг | ничего>`
 - От владельца: `<ничего | одно конкретное решение>`
 
-## VerificationTarget
+## FACTS
+
+### VerificationTarget
 
 `<стабильный объект проверки>`
 
-## Inputs
+### Inputs
 
 - `<TaskPath, отчёт, diff, артефакт или исходное состояние>`
 
-## Procedure
+### Сопоставление с требованиями
 
-- `<независимое действие, команда или сценарий>`
+- `<требование и прочитанный участок кода или diff>`
 
-## Evidence
+### Наблюдаемые факты
 
-- `<наблюдаемый факт, exit code или RUNLOGS/...>`
+- `<наблюдаемый факт со ссылкой на файл и строку>`
 
-## ChangedFiles
+## JUDGMENT
 
-- `<относительный путь каждого изменённого файла | NONE, если verification была read-only>`
+### AcceptanceMatrix
 
-## AcceptanceMatrix
-
-| Критерий/запрет | Procedure | Evidence | Результат |
+| Критерий/запрет | Проверенный код | Наблюдаемый факт | Результат |
 |---|---|---|---|
-| `<условие>` | `<проверка>` | `<факт>` | `<выполнен | не выполнен | не проверен>` |
+| `<условие>` | `<файл и строки>` | `<факт>` | `<выполнен | не выполнен | не проверен>` |
 
-## IssuesAndLimitations
+### IssuesAndLimitations
 
-- `<дефект, ограничение или непроверенная область | none>`
+- `<дефект, изменение вне задачи, ограничение или непроверенная область | none>`
 
-## RequiredFixOrEvidence
+### RequiredFixOrEvidence
 
 - `<минимальное исправление или evidence | none>`
 
-## FollowUp
+### FollowUp
 
 - `<handoff LEAD>`
