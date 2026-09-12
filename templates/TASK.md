@@ -1,7 +1,7 @@
 # <TicketId> — <Human Title>
 
 TicketId: `<TXXXX>`
-Role: `<ANALYST | CODER | TESTER | REVIEWER | VERIFIER>`
+Role: `<ANALYST | CODER | TESTER | REVIEWER>`
 Task: `<реальный внешний идентификатор, например SMS-745>`
 Title: `<slug-based-short-title>`
 CreatedAt: `<YYYY-MM-DD HH:MM timezone>`

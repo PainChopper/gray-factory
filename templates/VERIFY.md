@@ -4,7 +4,7 @@ Result: `<значение согласно rules/<ROLE>.md>`
 CreatedAt: `<YYYY-MM-DD HH:MM timezone>`
 TicketId: `<TXXXX>`
 Task: `<реальный внешний идентификатор, например SMS-745>`
-Role: `<REVIEWER | VERIFIER>`
+Role: `<REVIEWER>`
 Title: `<slug-based-short-title>`
 SourceTicket: `<MAIL/<ROLE>/IN/...md | direct-owner-request>`
 

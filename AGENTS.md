@@ -9,6 +9,4 @@
 - `ANALYST` → [ANALYST.md](rules/ANALYST.md);
 - `CODER` → [CODER.md](rules/CODER.md);
 - `TESTER` → [TESTER.md](rules/TESTER.md);
-- `REVIEWER` → [REVIEWER.md](rules/REVIEWER.md);
-- `VERIFIER` → [VERIFIER.md](rules/VERIFIER.md).
-
+- `REVIEWER` → [REVIEWER.md](rules/REVIEWER.md).
