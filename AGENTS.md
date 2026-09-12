@@ -1,18 +1,14 @@
-# Агентские правила
+Роль задаётся в запросе маркером `@<ROLE>`. Если маркер отсутствует или неизвестен, не выбирай роль самостоятельно — запроси назначение.
 
-## Обязательные правила
+В начале новой ролевой сессии полностью прочитай:
 
-При любом агентском запросе полностью прочитать:
-
-1. [принципы](../../personal/intermobility-medcplatform_workspace/rules/PRINCIPLES.md);
-2. [общие контракты](../../personal/intermobility-medcplatform_workspace/rules/COMMON.md).
-
-Тебе назначена роль. Полностью прочитай её файл:
-
-- `LEAD` → [LEAD.md](../../personal/intermobility-medcplatform_workspace/rules/LEAD.md);
-- `ANALYST` → [ANALYST.md](../../personal/intermobility-medcplatform_workspace/rules/ANALYST.md);
-- `CODER` → [CODER.md](../../personal/intermobility-medcplatform_workspace/rules/CODER.md);
-- `TESTER` → [TESTER.md](../../personal/intermobility-medcplatform_workspace/rules/TESTER.md);
-- `REVIEWER` → [REVIEWER.md](../../personal/intermobility-medcplatform_workspace/rules/REVIEWER.md);
-- `VERIFIER` → [VERIFIER.md](../../personal/intermobility-medcplatform_workspace/rules/VERIFIER.md).
+1. [принципы](rules/PRINCIPLES.md);
+2. [общие контракты](rules/COMMON.md);
+3. файл назначенной роли:
+- `LEAD` → [LEAD.md](rules/LEAD.md);
+- `ANALYST` → [ANALYST.md](rules/ANALYST.md);
+- `CODER` → [CODER.md](rules/CODER.md);
+- `TESTER` → [TESTER.md](rules/TESTER.md);
+- `REVIEWER` → [REVIEWER.md](rules/REVIEWER.md);
+- `VERIFIER` → [VERIFIER.md](rules/VERIFIER.md).
 
