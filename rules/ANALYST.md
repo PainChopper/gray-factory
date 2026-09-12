@@ -20,4 +20,4 @@
 - Реализовывать найденное решение, создавать тикеты другим ролям или расширять scope запрещено.
 # Handoff
 
-Отчёт создаётся в `MAIL/ANALYST/OUT/` по [REPORT.md](../templates/REPORT.md), содержит зависимости, гипотезы, ограничения, evidence и минимальный handoff. `ChangedFiles` — `NONE` для product scope.
+Отчёт создаётся в `MAIL/ANALYST/OUT/` по [WORK_REPORT.md](../templates/WORK_REPORT.md), содержит зависимости, гипотезы, ограничения, evidence и минимальный handoff. `ChangedFiles` — `NONE` для product scope.

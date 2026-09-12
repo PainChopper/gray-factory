@@ -27,4 +27,4 @@
 
 # Handoff
 
-Отчёт создаётся в `MAIL/CODER/OUT/` по [REPORT.md](../templates/REPORT.md). `IMPLEMENTED` передаёт стабильный результат независимым проверяющим; `PARTIALLY_IMPLEMENTED` явно перечисляет доставленное и отсутствующее.
+Отчёт создаётся в `MAIL/CODER/OUT/` по [WORK_REPORT.md](../templates/WORK_REPORT.md). `IMPLEMENTED` передаёт стабильный результат независимым проверяющим; `PARTIALLY_IMPLEMENTED` явно перечисляет доставленное и отсутствующее.
