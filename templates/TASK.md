@@ -2,7 +2,7 @@
 
 TicketId: `<TXXXX>`
 Role: `<ANALYST | CODER | TESTER | REVIEWER>`
-Task: `<реальный внешний идентификатор, например SMS-745>`
+Task: `<реальный внешний идентификатор рабочей задачи>`
 Title: `<slug-based-short-title>`
 CreatedAt: `<YYYY-MM-DD HH:MM timezone>`
 OwnerRequest: `<кратко в 1–3 строках>`
