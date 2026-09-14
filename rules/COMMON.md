@@ -17,7 +17,7 @@
 1. `PRINCIPLES.md`.
 2. `COMMON.md`.
 3. Файл назначенной роли.
-4. Immutable `TaskPath` и его `RequiredReads`/`RequiredSkills` конкретизируют входы, цель и инструменты, но не ослабляют запреты верхних уровней и не создают технологические нормативы.
+4. Неизменяемая постановка задачи (`TaskPath`) и указанные в ней материалы для чтения (`RequiredReads`) и навыки (`RequiredSkills`) уточняют входные данные, цель и инструменты, но не ослабляют вышестоящие запреты и не вводят нормы для конкретных технологий.
 
 - Работать можно только в назначенной роли, текущем `TaskPath` и разрешённых корнях.
 - Доступ к файлу, терминалу, сети, инструменту или внешней системе не является разрешением на действие.
@@ -42,42 +42,6 @@
 - Пароли, токены, cookies, ключи, строки подключения, credentials и чувствительные корпоративные данные нельзя читать, копировать, сохранять или передавать в правилах, тикетах, отчётах, логах, Git и сообщениях агентам.
 - Секрет при необходимости вводит пользователь через скрытое интерактивное приглашение; агент не получает его значение.
 - Получать факты из внешних систем запрещено. Если без внешнего факта вывод невозможен, возвращается `BLOCKED` с указанием требуемого факта.
-
-## Shell policy на Windows
-
-- PowerShell используется как orchestration shell и для Windows-native задач.
-- Служебный `.sh` или Bash-workflow запускается из PowerShell только через явно разрешённый Git for Windows `sh.exe`.
-- Bare `bash`, `bash.exe`, `bash -lc`, `sh`, `sh.exe`, `wsl` и `wsl.exe` запрещены.
-- Перед первым Bash-запуском в тикете выбранный entrypoint проверяется командами, эквивалентными `uname -s` и `command -v bash`. Допустимы только `MINGW`/`MSYS` и точный `/usr/bin/bash`; неоднозначность или иной runtime означает `BLOCKED`, fallback запрещён.
-- Канонический non-interactive bridge преобразует только абсолютный путь скрипта, передаёт путь и аргументы позиционно и сохраняет exit code:
-
-```powershell
-$gitForWindowsSh = Join-Path $env:ProgramFiles 'Git\bin\sh.exe'
-$resolvedScript = (Resolve-Path -LiteralPath $scriptPath).Path
-
-$kernel = & $gitForWindowsSh -lc 'uname -s'
-if ($LASTEXITCODE -ne 0 -or $kernel -notmatch '^(MINGW|MSYS)') { throw 'Git for Windows preflight failed' }
-
-$bashPath = & $gitForWindowsSh -lc 'command -v bash'
-if ($LASTEXITCODE -ne 0 -or $bashPath -ne '/usr/bin/bash') { throw 'Git for Windows bash is unavailable' }
-
-$msysScript = & $gitForWindowsSh -lc 'cygpath -u -- "$1"' -- $resolvedScript
-if ($LASTEXITCODE -ne 0 -or $msysScript.Count -ne 1) { throw 'Script path conversion failed' }
-
-& $gitForWindowsSh -lc 'exec /usr/bin/bash "$@"' -- $msysScript @scriptArgs
-$scriptExitCode = $LASTEXITCODE
-exit $scriptExitCode
-```
-
-- `$scriptPath` и `$scriptArgs` являются данными и не интерполируются в строку `-lc`; Windows→MSYS conversion применяется только к пути скрипта.
-- Каждый новый служебный `.sh` фактически тестируется тем же подтверждённым entrypoint во временном сценарии с путём, содержащим пробел и кириллицу, и с позиционными аргументами; проверяются точный вывод и exit code, после чего временный файл удаляется.
-- `git-bash.exe` используется только как интерактивный launcher.
-- Новый служебный `.sh` использует `#!/usr/bin/env bash`, LF, UTF-8 без BOM и quoted expansions. Его проверяют тем же entrypoint через `bash -n`, затем `shellcheck` при наличии.
-- Наличие `shellcheck` проверяется. Если инструмент отсутствует, это явно фиксируется в `ReportPath` как ограничение; отсутствие инструмента не выдаётся за выполненную проверку.
-- Публикуемый `.sh` должен переноситься между Git for Windows Bash и обычным Linux Bash. Windows launcher не встраивается в переносимое тело скрипта; `cygpath` допустим только в Windows adapter.
-- Существующие product `.sh` этим контрактом не нормализуются.
-- Для будущего Git-репозитория агентской системы отдельная задача добавляет `.gitattributes` с `*.sh text eol=lf`.
-- Перед нетривиальными PowerShell или Bash-командами применяются перечисленные в тикете hygiene skills. Каждая команда получает конечный timeout; после timeout команда не повторяется вслепую.
 
 ## Файлы, ссылки и Git-диагностика
 
