@@ -85,7 +85,7 @@ RUNLOGS/
 - `BUILD` содержит разрешённые локальные build-артефакты, `RUNLOGS` — команды, stdout/stderr, exit codes и evidence; наличие в runtime не делает файл допустимым для Git.
 - В `RUNLOGS` — только текстовые логи и evidence, на которые ссылается OUT. Бинарники, временные сборки и кэши — в `BUILD/`, его можно очищать целиком в любой момент. Скриншоты — только когда их требует тикет, и в OUT остаются только процитированные.
 - Имена: IN — `TXXXX_YYYYMMDD-HHMM_<ROLE>_<slug>.md`; OUT — `TXXXX_YYYYMMDD-HHMM_<ROLE>_<slug>_report.md`; RUNLOG — `TXXXX_YYYYMMDD-HHMM_<ROLE>_<slug>_log.<ext>`. Дата, время и timezone задаются локальным соглашением; slug не содержит пробелов.
-- Кэши инструментов (GOCACHE, GOMODCACHE, golangci-lint) — общие в `BUILD/_cache/`, не отдельные на каждый тикет.
+- Кэши инструментов — общие, по фиксированным путям: `GOCACHE=BUILD/_cache/go`, `GOMODCACHE=BUILD/_cache/go-mod`, `GOLANGCI_LINT_CACHE=BUILD/_cache/golangci-lint`. Отдельные кэши на тикет не создавать; golangci-lint по модулям запускать последовательно.
 - Не копировать репозиторий в `BUILD/` и не считать SHA-манифесты без прямого требования тикета: неизменность проверяется через `git status` и `git diff`.
 
 ## Владение артефактами
