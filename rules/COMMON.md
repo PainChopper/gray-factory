@@ -79,7 +79,7 @@ RUNLOGS/
 
 - `LEAD` создаёт IN в `MAIL/<ROLE>/IN/`; роль читает свой IN и перечисленные `RequiredReads`, пишет только собственный OUT и не изменяет чужие IN/OUT.
 - IN и OUT остаются историей в MAIL. План переносится в `ARCHIVE/PLANS` только по решению `LEAD`.
-- Runtime `PLANS/` хранит только активные временные планы выполнения. Принятый долговременный план перемещается без второй копии в workspace `plans/`, редактируется там на месте, а историю версий хранит Git.
+- Runtime `PLANS/` хранит только активные временные планы выполнения. Принятый долговременный план перемещается без второй копии в runtime `ROADMAP/` и редактируется там на месте. В репозиторий продукта планы не кладутся.
 - `BUILD` содержит разрешённые локальные build-артефакты, `RUNLOGS` — команды, stdout/stderr, exit codes и evidence; наличие в runtime не делает файл допустимым для Git.
 - Имена: IN — `TXXXX_YYYYMMDD-HHMM_<ROLE>_<slug>.md`; OUT — `TXXXX_YYYYMMDD-HHMM_<ROLE>_<slug>_report.md`; RUNLOG — `TXXXX_YYYYMMDD-HHMM_<ROLE>_<slug>_log.<ext>`. Дата, время и timezone задаются локальным соглашением; slug не содержит пробелов.
 
