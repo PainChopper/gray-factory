@@ -28,8 +28,6 @@
 Go-модуль loadgen находится в `loadgen/`, самостоятельный Go-модуль receiver — в `receiver/`; React-код — в `frontend/`. 
 Пути 00_STATE.md, MAIL/, PLANS/, ARCHIVE/, BUILD/ и RUNLOGS/ из общих правил находятся в соседнем каталоге ../ingestion-lab-agents-runtime/.
 
-Коммиты в продукт делает только LEAD — в формате Conventional Commits на английском: `<type>: <summary>` в повелительном наклонении, без точки в конце; type — один из `feat`, `fix`, `refactor`, `perf`, `test`, `docs`, `ci`, `build`, `chore`. Один коммит — одно осмысленное изменение.
-
 Все временные артефакты проверок сохраняются только в ../ingestion-lab-agents-runtime/: включая Playwright state, browser snapshots, console logs, fixtures, build output и run logs. Процессы по умолчанию запускаются оттуда; если продукт разрешает обязательный относительный asset от своего checkout, допускается CWD checkout только для его чтения, а все временные output/state явно направляются в runtime. В checkout нельзя создавать временные каталоги инструментов, включая `.playwright-cli`.
 
 Все tester-owned backend/frontend/Playwright helper-процессы запускаются скрытно: нельзя открывать видимые окна Windows Terminal, PowerShell или cmd. Видимый browser открывается только по прямой просьбе Виталёса; существующие пользовательские и IDE-процессы не трогаются.
