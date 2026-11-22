@@ -12,6 +12,8 @@
 
 Для `@TEACHER` прочитай [TEACHER.md](../ingestion-lab-agents/rules/TEACHER.md). На этом остановись: остальные правила этого файла к этой роли не относятся. Эта роль работает непосредственно с Виталёсом.
 
+Для `@WATCHDOG` прочитай [WATCHDOG.md](../ingestion-lab-agents/rules/WATCHDOG.md), затем [принципы](../ingestion-lab-agents/rules/PRINCIPLES.md), [общие контракты](../ingestion-lab-agents/rules/COMMON.md) и [LEAD.md](../ingestion-lab-agents/rules/LEAD.md) как описание того, что ожидается от команды; обязанности из них к этой роли не относятся. При ревью Go-кода прочитай также [REVIEW-GO.md](../ingestion-lab-agents/rules/REVIEW-GO.md). Эта роль работает непосредственно с Виталёсом.
+
 Для рабочих ролей прочитай:
 1. [принципы](../ingestion-lab-agents/rules/PRINCIPLES.md);
 2. [общие контракты](../ingestion-lab-agents/rules/COMMON.md);
