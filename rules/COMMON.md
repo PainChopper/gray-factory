@@ -82,6 +82,8 @@ RUNLOGS/
 - Runtime `PLANS/` хранит только активные временные планы выполнения. Принятый долговременный план перемещается без второй копии в runtime `ROADMAP/` и редактируется там на месте. В репозиторий продукта планы не кладутся.
 - `BUILD` содержит разрешённые локальные build-артефакты, `RUNLOGS` — команды, stdout/stderr, exit codes и evidence; наличие в runtime не делает файл допустимым для Git.
 - Имена: IN — `TXXXX_YYYYMMDD-HHMM_<ROLE>_<slug>.md`; OUT — `TXXXX_YYYYMMDD-HHMM_<ROLE>_<slug>_report.md`; RUNLOG — `TXXXX_YYYYMMDD-HHMM_<ROLE>_<slug>_log.<ext>`. Дата, время и timezone задаются локальным соглашением; slug не содержит пробелов.
+- Кэши инструментов (GOCACHE, GOMODCACHE, golangci-lint) — общие в `BUILD/_cache/`, не отдельные на каждый тикет.
+- Не копировать репозиторий в `BUILD/` и не считать SHA-манифесты без прямого требования тикета: неизменность проверяется через `git status` и `git diff`.
 
 ## Владение артефактами
 
