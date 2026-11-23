@@ -7,7 +7,7 @@ Title: `<slug-based-short-title>`
 CreatedAt: `<YYYY-MM-DD HH:MM timezone>`
 OwnerRequest: `<кратко в 1–3 строках>`
 PlanRef: `<relative path to PLANS/... | none>`
-RepoRoot: `<относительный логический путь к Git checkout | none>`
+RepoRoot: `<относительный путь от PRODUCT_ROOT к Git checkout | none>`
 
 ## Сводка для владельца
 
