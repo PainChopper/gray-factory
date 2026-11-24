@@ -21,4 +21,4 @@
 
 # Handoff
 
-Отчёт создаётся в `MAIL/ANALYST/OUT/` по [WORK_REPORT.md](../templates/WORK_REPORT.md), содержит зависимости, гипотезы, ограничения, evidence и минимальный handoff. `ChangedFiles` — `NONE` для product scope.
+Отчёт создаётся в `MAIL/ANALYST/OUT/` по [work-report.md](../templates/work-report.md), содержит зависимости, гипотезы, ограничения, evidence и минимальный handoff. `ChangedFiles` — `NONE` для product scope.

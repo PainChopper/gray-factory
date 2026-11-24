@@ -26,4 +26,4 @@
 
 # Handoff
 
-Отчёт создаётся в `MAIL/TESTER/OUT/` по [WORK_REPORT.md](../templates/WORK_REPORT.md). Дефект возвращается через `LEAD` в новый узкий CODER-тикет; TESTER не исправляет его и не выполняет финальную приёмку.
+Отчёт создаётся в `MAIL/TESTER/OUT/` по [work-report.md](../templates/work-report.md). Дефект возвращается через `LEAD` в новый узкий CODER-тикет; TESTER не исправляет его и не выполняет финальную приёмку.

@@ -22,11 +22,11 @@
 
 При первом запросе с маркером `@<ROLE>` и после каждого сжатия контекста полностью прочитай указанные для роли файлы до ответа или действий.
 
-- `@TEACHER` — [TEACHER.md](../rules/TEACHER.md). На этом остановись: общие правила рабочих ролей к TEACHER не относятся. TEACHER работает непосредственно с владельцем.
-- `@WATCHDOG` — [WATCHDOG.md](../rules/WATCHDOG.md), затем [PRINCIPLES.md](../rules/PRINCIPLES.md), [COMMON.md](../rules/COMMON.md) и [LEAD.md](../rules/LEAD.md) как описание того, что ожидается от команды. Обязанности из этих трёх файлов к WATCHDOG не относятся. При ревью Go-кода прочитай также [REVIEW-GO.md](../rules/REVIEW-GO.md). WATCHDOG работает непосредственно с владельцем.
-- Рабочие роли — сначала [PRINCIPLES.md](../rules/PRINCIPLES.md) и [COMMON.md](../rules/COMMON.md), затем правила назначенной роли:
-  - `@LEAD` — [LEAD.md](../rules/LEAD.md).
-  - `@ANALYST` — [ANALYST.md](../rules/ANALYST.md).
-  - `@CODER` — [CODER.md](../rules/CODER.md). Заменяемый пример профиля языка для Go — [GO-CODING.md](../rules/GO-CODING.md).
-  - `@TESTER` — [TESTER.md](../rules/TESTER.md).
-  - `@REVIEWER` — [REVIEWER.md](../rules/REVIEWER.md). Заменяемый пример профиля языка для Go — [REVIEW-GO.md](../rules/REVIEW-GO.md).
+- `@TEACHER` — [teacher.md](../rules/teacher.md). На этом остановись: общие правила рабочих ролей к TEACHER не относятся. TEACHER работает непосредственно с владельцем.
+- `@WATCHDOG` — [watchdog.md](../rules/watchdog.md), затем [principles.md](../rules/principles.md), [common.md](../rules/common.md) и [lead.md](../rules/lead.md) как описание того, что ожидается от команды. Обязанности из этих трёх файлов к WATCHDOG не относятся. При ревью Go-кода прочитай также [review-go.md](../rules/review-go.md). WATCHDOG работает непосредственно с владельцем.
+- Рабочие роли — сначала [principles.md](../rules/principles.md) и [common.md](../rules/common.md), затем правила назначенной роли:
+  - `@LEAD` — [lead.md](../rules/lead.md).
+  - `@ANALYST` — [analyst.md](../rules/analyst.md).
+  - `@CODER` — [coder.md](../rules/coder.md). Заменяемый пример профиля языка для Go — [go-coding.md](../rules/go-coding.md).
+  - `@TESTER` — [tester.md](../rules/tester.md).
+  - `@REVIEWER` — [reviewer.md](../rules/reviewer.md). Заменяемый пример профиля языка для Go — [review-go.md](../rules/review-go.md).

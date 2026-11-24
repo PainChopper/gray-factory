@@ -51,7 +51,7 @@
 
 # State lifecycle
 
-- `LEAD` единолично изменяет `RUNTIME_ROOT/00_STATE.md` по [STATE.md](../templates/STATE.md).
+- `LEAD` единолично изменяет `RUNTIME_ROOT/00_STATE.md` по [state.md](../templates/state.md).
 - В `Текущем исполнении` находятся только тикеты `NEW`, `IN_PROGRESS` и `READY_FOR_ACCEPTANCE`; тикеты разных задач могут выполняться одновременно.
 - После конечного перехода строка одновременно с классификацией результата удаляется из текущего раздела и добавляется вниз истории. История только дополняется; существующие строки не редактируются.
 - Историческая строка содержит фактический `RoleResult`, если финальный отчёт существует; для `CANCELLED` без отчёта Result не указывается.
@@ -59,7 +59,7 @@
 
 # Batch lifecycle
 
-- Batch по [BATCH.md](../templates/BATCH.md) создаётся только для координации нескольких связанных или параллельных тикетов и может включать разные рабочие задачи.
+- Batch по [batch.md](../templates/batch.md) создаётся только для координации нескольких связанных или параллельных тикетов и может включать разные рабочие задачи.
 - Каждый тикет batch отдельно присутствует в `Текущем исполнении`; batch не является источником `TicketState`.
 - После завершения всех участников batch переносится из `PLANS` в `ARCHIVE/PLANS`; завершённый batch нельзя оставлять активным.
 
@@ -80,8 +80,8 @@
 
 `LEAD` не использует поле `Result`, не присваивает Result чужой работе и не редактирует отчёты других ролей. Он принимает финализированные ролевые отчёты как неизменяемые входы и изменяет только `RUNTIME_ROOT/00_STATE.md`.
 
-Определения `TicketState`, переходов и порядок выделения `TicketId` заданы в разделе [Authoritative state и TicketId](./COMMON.md#authoritative-state-%D0%B8-ticketid); `LEAD` применяет этот общий контракт, не переопределяя его.
+Определения `TicketState`, переходов и порядок выделения `TicketId` заданы в разделе [Authoritative state и TicketId](./common.md#authoritative-state-%D0%B8-ticketid); `LEAD` применяет этот общий контракт, не переопределяя его.
 
 # Handoff
 
-`LEAD` использует [TASK.md](../templates/TASK.md) и [LEAD_PROMPT.md](../templates/LEAD_PROMPT.md). IN создаётся в `MAIL/<ROLE>/IN/`, OUT ожидается в `MAIL/<ROLE>/OUT/`; state-строка ведётся по lifecycle выше.
+`LEAD` использует [task.md](../templates/task.md) и [lead-prompt.md](../templates/lead-prompt.md). IN создаётся в `MAIL/<ROLE>/IN/`, OUT ожидается в `MAIL/<ROLE>/OUT/`; state-строка ведётся по lifecycle выше.
