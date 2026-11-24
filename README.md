@@ -14,9 +14,9 @@ Gray Factory is a role-based workflow for AI-assisted project work. It keeps tas
 
 ## Connect a project
 
-1. Put `AGENTS.md` in the product root. It can be a symbolic link to [the shared router](router.md) when its role links resolve from your product root. For another directory layout, copy [the router template](templates/AGENTS.md) and adjust its role links to point to the Gray Factory checkout. Resolve router links from the directory containing the product’s `AGENTS.md`.
-2. Create `AGENTS.project-rules.md` beside `AGENTS.md`. Every role reads it before starting. Define `PRODUCT_ROOT` (usually `./`), `RULES_ROOT` (the Gray Factory checkout), and `RUNTIME_ROOT` (a local directory outside the product checkout). For local-only settings, add `/AGENTS.project-rules.md` to the product repository’s `.git/info/exclude`.
-3. In the project rules, link the applicable coding and review profiles by role and technology. For a Go project, link CODER to the [Go coding profile](rules/go-coding.md) and REVIEWER to the [Go review profile](rules/review-go.md). Use the review profile for WATCHDOG when it reviews Go code. Resolve these links from the product root.
-4. Set `DOCUMENT_LANGUAGE` for tickets, reports, plans, and notes. Keep template headings and identifiers as written. Record project-specific test commands, caches, Git publication rules, and mentorship context here. Keep personal communication preferences in the owner’s machine-wide agent instructions.
+1. Add `/AGENTS.md` to the product repository’s `.git/info/exclude`. Copy [the project template](templates/AGENTS.md) to the product root as an ordinary local `AGENTS.md`.
+2. In that file, set the link to [the shared router](router.md) relative to the product root. This one link locates Gray Factory. The router resolves role links from its own directory.
+3. Set `PRODUCT_ROOT` to the directory containing the product’s `AGENTS.md`. Choose a local `RUNTIME_ROOT` outside the product checkout, relative to `PRODUCT_ROOT`. Use the linked router’s directory as `RULES_ROOT`.
+4. In the same file, record the document language (`DOCUMENT_LANGUAGE`), test commands, caches, publication rules, and any mentorship settings. List the profiles each role should read for the project’s stack. For Go, use `RULES_ROOT/rules/go-coding.md` for CODER and `RULES_ROOT/rules/review-go.md` for REVIEWER and WATCHDOG when reviewing Go. The agent substitutes the router’s directory for `RULES_ROOT` in these paths.
 
 Invoke a role by adding its marker to a request, for example `@LEAD`. Ticket inputs, reports, and lifecycle state live under `RUNTIME_ROOT`.
