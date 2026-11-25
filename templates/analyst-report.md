@@ -2,7 +2,7 @@
 
 CreatedAt: `<YYYY-MM-DD HH:MM timezone>`
 TicketId: `<TXXXX>`
-Task: `<реальный внешний идентификатор рабочей задачи>`
+Task: `<значение Task из тикета, если указано; иначе оставь поле пустым>`
 Role: `ANALYST`
 Title: `<slug-based-short-title>`
 SourceTicket: `<MAIL/<ROLE>/IN/...md | direct-owner-request>`

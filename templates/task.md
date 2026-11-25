@@ -2,7 +2,7 @@
 
 TicketId: `<TXXXX>`
 Role: `<ANALYST | CODER | TESTER | REVIEWER>`
-Task: `<реальный внешний идентификатор рабочей задачи>`
+Task: `<внешний идентификатор задачи, если указан; иначе оставь поле пустым>`
 Title: `<slug-based-short-title>`
 CreatedAt: `<YYYY-MM-DD HH:MM timezone>`
 OwnerRequest: `<кратко в 1–3 строках>`
@@ -26,7 +26,7 @@ PlanRef: `<relative path to PLANS/... | none>`
 
 ## WriteAllowlist
 
-- `<конкретный ReportPath>`
+- `<путь к файлу отчёта по этому тикету>`
 - `<другой разрешённый логический корень | NONE>`
 
 ## RequiredReads
