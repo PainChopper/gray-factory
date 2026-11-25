@@ -9,8 +9,8 @@ Gray Factory — система совместной работы разрабо
 При первом запросе с маркером `@<ROLE>` и после каждого сжатия контекста полностью прочитай указанные для роли файлы и применимые профили из правил проекта до ответа или действий.
 
 - `@TEACHER` — [teacher.md](./rules/teacher.md). На этом остановись: общие правила рабочих ролей к TEACHER не относятся. TEACHER работает непосредственно с владельцем.
-- `@WATCHDOG` — [watchdog.md](./rules/watchdog.md), затем [principles.md](./rules/principles.md), [common.md](./rules/common.md) и [lead.md](./rules/lead.md) как описание того, что ожидается от команды. Обязанности из этих трёх файлов к WATCHDOG не относятся. WATCHDOG работает непосредственно с владельцем.
-- Рабочие роли — сначала [principles.md](./rules/principles.md) и [common.md](./rules/common.md), затем правила назначенной роли:
+- `@WATCHDOG` — [watchdog.md](./rules/watchdog.md), затем [principles.md](./principles.md), [common.md](./rules/common.md) и [lead.md](./rules/lead.md) как описание того, что ожидается от команды. Обязанности из этих трёх файлов к WATCHDOG не относятся. WATCHDOG работает непосредственно с владельцем.
+- Рабочие роли — сначала [principles.md](./principles.md) и [common.md](./rules/common.md), затем правила назначенной роли:
   - `@LEAD` — [lead.md](./rules/lead.md).
   - `@ANALYST` — [analyst.md](./rules/analyst.md).
   - `@CODER` — [coder.md](./rules/coder.md).

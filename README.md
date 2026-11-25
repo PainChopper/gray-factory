@@ -2,6 +2,8 @@
 
 Gray Factory is a role-based workflow for AI-assisted project work. It keeps task coordination, implementation, testing, and review in separate roles and records each handoff in Markdown.
 
+The [principles](principles.md) explain how agents share responsibility and how their work is accepted.
+
 | Role | Responsibility |
 | --- | --- |
 | [LEAD](rules/lead.md) | Define tasks, route work, and accept role reports. |
