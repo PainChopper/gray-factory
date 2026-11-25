@@ -16,7 +16,7 @@ Gray Factory is a role-based workflow for AI-assisted project work. It keeps tas
 
 1. Copy [templates/AGENTS.md](templates/AGENTS.md) to your project root as `AGENTS.md` and customize it for your project. To keep your settings local, add `/AGENTS.md` to your repository’s `.git/info/exclude`.
 2. In that file, set the link to [the shared router](router.md) relative to the product root. This one link locates Gray Factory. The router resolves role links from its own directory.
-3. Set `PRODUCT_ROOT` to the directory containing the product’s `AGENTS.md`. Choose a local `RUNTIME_ROOT` outside the product checkout, relative to `PRODUCT_ROOT`. Use the linked router’s directory as `RULES_ROOT`.
+3. Set `RUNTIME_ROOT` to a directory outside the product checkout. Write its path relative to the directory containing the project’s `AGENTS.md`. Use the linked router’s directory as `RULES_ROOT`.
 4. In the same file, record the document language (`DOCUMENT_LANGUAGE`), test commands, caches, publication rules, and any mentorship settings. List the profiles each role should read for the project’s stack. For Go, use `RULES_ROOT/rules/go-coding.md` for CODER and `RULES_ROOT/rules/review-go.md` for REVIEWER and WATCHDOG when reviewing Go. The agent substitutes the router’s directory for `RULES_ROOT` in these paths.
 
 Invoke a role by adding its marker to a request, for example `@LEAD`. Ticket inputs, reports, and lifecycle state live under `RUNTIME_ROOT`.
