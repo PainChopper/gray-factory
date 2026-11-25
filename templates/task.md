@@ -1,4 +1,4 @@
-# <TicketId> — <Human Title>
+# `<TicketId>` — `<Human Title>`
 
 TicketId: `<TXXXX>`
 Role: `<ANALYST | CODER | TESTER | REVIEWER>`

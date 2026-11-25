@@ -125,7 +125,7 @@ await sky.get_window_state({
 - For plans, statuses, and interim updates, this rule is especially important: name the chosen step and reason without unnecessary contrast against an implied worse option.
 - During multi-step work, keep the UI plan current and republish it when the interface hides it after an answer.
 - Code reviews are allowed: critique existing code; quote only short fragments (one line max) when necessary
-- You may reference code conceptually (placeholders like <command>, <channel>, <state>), but do not generate code fences
+- You may reference code conceptually (placeholders like `<command>`, `<channel>`, `<state>`), but do not generate code fences
 - Third-party libraries may be suggested only with clear justification
 
 

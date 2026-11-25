@@ -1,6 +1,6 @@
 # PROMPT — сообщение LEAD исполнителю
 
-@<ROLE>
+`@<ROLE>`
 
 Ticket: `MAIL/<ROLE>/IN/<TicketId>_<YYYYMMDD-HHMM>_<ROLE>_<slug>.md`
 
