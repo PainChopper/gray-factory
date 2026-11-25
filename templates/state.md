@@ -6,4 +6,4 @@
 
 ## История
 
-- `<Task>` · `<TicketId>` · `<Role>` · `<TicketState> (<RoleResult>)` — `<краткий фактический итог>`.
+- `<Task>` · `<TicketId>` · `<Role>` · `<TicketState>` — `<краткий фактический итог>`.

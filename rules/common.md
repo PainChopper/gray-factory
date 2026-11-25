@@ -96,7 +96,7 @@ RUNLOGS/
 
 ## Authoritative state и TicketId
 
-`00_STATE.md` следует [state.md](../templates/state.md): это плоский индекс с разделами `Текущее исполнение` и append-only `История`. Одна запись занимает одну строку и содержит только `Task`, `TicketId`, роль, `TicketState` и краткое содержание; историческая строка также содержит `RoleResult`, если он существует. Пути, timestamps, отдельные task records и иная metadata не хранятся. Task-level state агентская система не ведёт.
+`00_STATE.md` следует [state.md](../templates/state.md): это плоский индекс с разделами `Текущее исполнение` и append-only `История`. Одна запись занимает одну строку и содержит только `Task`, `TicketId`, роль, `TicketState` и краткое содержание. Пути, timestamps, отдельные task records и иная metadata не хранятся. Task-level state агентская система не ведёт.
 
 `TicketState`:
 
@@ -109,7 +109,7 @@ RUNLOGS/
 - `FAILED` — роль не выполнила назначенную работу;
 - `CANCELLED` — выполнение прекращено прямым решением пользователя или `LEAD` в пределах полномочий.
 
-`TicketState: DONE` означает только принятый ролевой тикет и не изменяет предметный `RoleResult`: `DONE (PASS)`, `DONE (IMPLEMENTED)` и `DONE (CONCLUSIVE)` — разные корректные исторические итоги. Role-local `Result: BLOCKED` и `Result: FAILED` ведут соответственно в `TicketState: BLOCKED` и `TicketState: FAILED`. `CANCELLED` не требует финального `Result` или OUT. Завершение тикета автоматически не изменяет статус внешней рабочей задачи.
+`TicketState: DONE` означает, что ролевой тикет принят. Role-local `Result: BLOCKED` и `Result: FAILED` ведут соответственно в `TicketState: BLOCKED` и `TicketState: FAILED`. `CANCELLED` не требует финального `Result` или OUT. Завершение тикета автоматически не изменяет статус внешней рабочей задачи.
 
 Следующий `TicketId` один `LEAD` выделяет последовательно: находит все самостоятельные `TXXXX` в `00_STATE.md`, `MAIL`, `PLANS` и `ARCHIVE`, берёт максимум + 1 и проверяет коллизию во всех этих местах. Только после проверки создаются IN и state-запись. Номер не хранится в state; при повреждении или противоречии `LEAD` возвращает `BLOCKED` и не переиспользует номер по догадке.
 
