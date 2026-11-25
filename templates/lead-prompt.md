@@ -2,7 +2,7 @@
 
 @<ROLE>
 
-Ticket: `MAIL/<ROLE>/IN/TXXXX_YYYYMMDD-HHMM_<ROLE>_<slug>.md`
+Ticket: `MAIL/<ROLE>/IN/<TicketId>_<YYYYMMDD-HHMM>_<ROLE>_<slug>.md`
 
 Task: `<реальный внешний идентификатор из Ticket>`
 

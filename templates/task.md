@@ -52,7 +52,7 @@ PlanRef: `<relative path to PLANS/... | none>`
 
 ## ArtifactsOut
 
-- Основной OUT: `MAIL/<ROLE>/OUT/TXXXX_YYYYMMDD-HHMM_<ROLE>_<slug>_report.md`.
+- Основной OUT: `MAIL/<ROLE>/OUT/<TicketId>_<YYYYMMDD-HHMM>_<ROLE>_<slug>_report.md`.
 - Дополнительные артефакты: `<relative paths | none>`.
 
 ## Acceptance
