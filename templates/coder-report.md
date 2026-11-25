@@ -1,0 +1,62 @@
+# `<TicketId>` — `<Human Title>`
+
+CreatedAt: `<YYYY-MM-DD HH:MM timezone>`
+TicketId: `<TXXXX>`
+Task: `<реальный внешний идентификатор рабочей задачи>`
+Role: `CODER`
+Title: `<slug-based-short-title>`
+SourceTicket: `<MAIL/<ROLE>/IN/...md | direct-owner-request>`
+
+**Сводка для владельца**
+
+`<Одним-двумя короткими абзацами без списка сообщи владельцу, что сделано или проверено и каков итог. Укажи следующий шаг и вопрос владельцу, только если они действительно нужны.>`
+
+## FAILED
+
+## BLOCKED
+
+## OUT_OF_SCOPE
+
+## IMPLEMENTED
+
+`<изменения, которые кодер реализовал и проверил. Для каждого изменения указано, какое требование тикета оно выполняет и как кодер это проверил.>`
+
+## FACTS
+
+### Summary
+
+`<что фактически произошло>`
+
+### Delivered
+
+- `<что произведено или зафиксировано>`
+
+### ChangedFiles
+
+- `<relative path | NONE>`
+
+### ChecksRun
+
+- `<команда/действие → exit code или наблюдение>`
+
+### EvidenceAndArtifacts
+
+- `<RUNLOGS/... или другой relative path | none>`
+
+## JUDGMENT
+
+### ResultBasis
+
+- `<критерий → evidence → вывод>`
+
+### ScopeCompliance
+
+- `<доказательство соблюдения scope и запретов>`
+
+### IssuesAndRisks
+
+- `<проблема, риск или непроверенное условие | none>`
+
+### FollowUp
+
+- `<минимальный handoff | none>`
