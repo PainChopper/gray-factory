@@ -15,7 +15,7 @@ Gray Factory is a role-based workflow for AI-assisted project work. It keeps tas
 ## Connect a project
 
 1. Clone Gray Factory with `git clone https://github.com/PainChopper/gray-factory.git`. You can use the same checkout for multiple projects.
-2. Copy [templates/AGENTS.md](templates/AGENTS.md) from that checkout to your project root as `AGENTS.md` and customize it for your project. To keep your settings local, add `/AGENTS.md` to your repository’s `.git/info/exclude`.
+2. Copy [setup/AGENTS.md](setup/AGENTS.md) from that checkout to your project root as `AGENTS.md` and customize it for your project. To keep your settings local, add `/AGENTS.md` to your repository’s `.git/info/exclude`.
 3. In your copy, fill in the path to [router.md](router.md) in your Gray Factory checkout. Use an absolute path or a path relative to your project’s `AGENTS.md`.
 4. Set `RUNTIME_ROOT` to a directory outside the product checkout. Use an absolute path or a path relative to the directory containing the project’s `AGENTS.md`.
 5. Set `DOCUMENT_LANGUAGE` to the language agents should use for tickets, reports, plans, and notes.
