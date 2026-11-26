@@ -23,4 +23,4 @@ The [principles](principles.md) explain how agents share responsibility and how 
 5. Set `DOCUMENT_LANGUAGE` to the language agents should use for tickets, reports, plans, and notes.
 6. Add your project-specific instructions to your local `AGENTS.md` below the line that tells agents to read `router.md`. Include test commands, cache locations, publication rules, or mentorship settings as needed. List each role’s profiles using paths relative to the directory containing `router.md`. For Go, CODER reads `rules/go-coding.md` for Go changes. REVIEWER and WATCHDOG read `rules/review-go.md` when reviewing Go code.
 
-Invoke a role by adding its marker to a request, for example `@LEAD`. Ticket inputs, reports, and lifecycle state live under `RUNTIME_ROOT`.
+Invoke a role by adding its marker to a request, for example `@LEAD`. [Ticket inputs](templates/task.md), reports, and [lifecycle state](templates/state.md) live under `RUNTIME_ROOT`.
