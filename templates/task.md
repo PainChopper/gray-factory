@@ -1,6 +1,5 @@
-# `<TicketId>` — `<Human Title>`
+# `<TicketId>` — <краткое название поручения>
 
-TicketId: `<TXXXX>`
 Role: `<ANALYST | CODER | TESTER | REVIEWER>`
 Task: `<внешний идентификатор задачи, если указан; иначе оставь поле пустым>`
 Title: `<slug-based-short-title>`

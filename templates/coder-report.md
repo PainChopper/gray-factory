@@ -1,7 +1,6 @@
 # `<TicketId>` — `<Human Title>`
 
 CreatedAt: `<YYYY-MM-DD HH:MM timezone>`
-TicketId: `<TXXXX>`
 Task: `<значение Task из тикета, если указано; иначе оставь поле пустым>`
 Role: `CODER`
 Title: `<slug-based-short-title>`
