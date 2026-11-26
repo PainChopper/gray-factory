@@ -1,9 +1,7 @@
-# `<TicketId>` — `<Human Title>`
+# `<TicketId>` — <краткое название отчёта>
 
-CreatedAt: `<YYYY-MM-DD HH:MM timezone>`
-Task: `<значение Task из тикета, если указано; иначе оставь поле пустым>`
 Role: `CODER`
-Title: `<slug-based-short-title>`
+Task: `<значение Task из тикета, если указано; иначе оставь поле пустым>`
 SourceTicket: `<MAIL/<ROLE>/IN/...md | direct-owner-request>`
 
 **Сводка для владельца**
