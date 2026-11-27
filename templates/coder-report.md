@@ -40,7 +40,7 @@ SourceTicket: `<MAIL/<ROLE>/IN/...md | direct-owner-request>`
 
 ### ChecksRun
 
-- `<команда/действие → exit code или наблюдение>`
+- `<что ты проверял, какой командой или действием, какой результат наблюдал и совпал ли он с ожидаемым>`
 
 ### EvidenceAndArtifacts
 
