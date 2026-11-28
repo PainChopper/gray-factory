@@ -41,6 +41,7 @@ MAIL/
 ├── CODER/{IN,OUT}/
 ├── TESTER/{IN,OUT}/
 └── REVIEWER/{IN,OUT}/
+DOCS/
 PLANS/
 ROADMAP/  (необязательно)
 ARCHIVE/
