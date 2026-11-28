@@ -21,7 +21,7 @@ The [principles](principles.md) explain how agents share responsibility and how 
 3. In your copy, fill in the path to [router.md](router.md) in your Gray Factory checkout. Use an absolute path or a path relative to your project’s `AGENTS.md`.
 4. Set `RUNTIME_ROOT` to a directory outside the product checkout. Use an absolute path or a path relative to the directory containing the project’s `AGENTS.md`.
 5. Set `DOCUMENT_LANGUAGE` to the language agents should use for tickets, reports, plans, and notes.
-6. Add your project-specific instructions to your local `AGENTS.md` below the line that tells agents to read `router.md`. Include test commands, cache locations, publication rules, or mentorship settings as needed. List each role’s profiles using paths relative to the directory containing `router.md`. For Go, CODER reads `rules/go-coding.md` for Go changes. REVIEWER and WATCHDOG read `rules/review-go.md` when reviewing Go code.
+6. List each role’s profiles using paths relative to the directory containing `router.md`. For Go, CODER reads `rules/go-coding.md` for Go changes. REVIEWER and WATCHDOG read `rules/review-go.md` when reviewing Go code. The project owner may also add project-specific instructions to the local `AGENTS.md` below the line that tells agents to read `router.md`. Examples include test commands, cache locations, publication rules, and mentorship settings.
 
 Invoke a role by adding its marker to a request, for example `@LEAD`. [Ticket inputs](templates/task.md), reports, and [lifecycle state](templates/state.md) live under `RUNTIME_ROOT`.
 
