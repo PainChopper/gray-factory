@@ -40,7 +40,7 @@ SourceTicket: `<MAIL/<ROLE>/IN/...md | direct-owner-request>`
 
 ### ChangedFiles
 
-- `<relative path | NONE>`
+- `<relative path>`
 
 ### ChecksRun
 
@@ -48,7 +48,7 @@ SourceTicket: `<MAIL/<ROLE>/IN/...md | direct-owner-request>`
 
 ### EvidenceAndArtifacts
 
-- `<RUNLOGS/... или другой relative path | none>`
+- `<RUNLOGS/... или другой relative path>`
 
 ## JUDGMENT
 
@@ -62,8 +62,8 @@ SourceTicket: `<MAIL/<ROLE>/IN/...md | direct-owner-request>`
 
 ### IssuesAndRisks
 
-- `<проблема, риск или непроверенное условие | none>`
+- `<проблема, риск или непроверенное условие>`
 
 ### FollowUp
 
-- `<минимальный handoff | none>`
+- `<минимальный handoff>`
